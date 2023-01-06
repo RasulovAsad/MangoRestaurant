@@ -22,7 +22,7 @@ namespace Mango.Web.Controllers
             {
                 list = JsonConvert.DeserializeObject<List<ProductDto>>(Convert.ToString(response.Result));
             }
-            return View();
+            return View(list);
         }
     }
 }
